@@ -1,0 +1,5008 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/Tola-Work/preview-code-zero-website/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>CodeZero PRD</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="violet" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#codezero-system-features-product-requirements-document" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="CodeZero PRD" class="md-header__button md-logo" aria-label="CodeZero PRD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CodeZero PRD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CodeZero System Features - Product Requirements Document
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="violet" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="violet" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Tola-Work/preview-code-zero-website" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CodeZero System
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  CodeZero System Features - Product Requirements Document
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="CodeZero PRD" class="md-nav__button md-logo" aria-label="CodeZero PRD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CodeZero PRD
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Tola-Work/preview-code-zero-website" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CodeZero System
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CodeZero System Features - Product Requirements Document
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CodeZero System Features - Product Requirements Document
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#document-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Document Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#student-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STUDENT PORTAL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="STUDENT PORTAL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-view-profile-stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. View Profile &amp; Stats
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-classes-leaderboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Classes Leaderboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-current-lessons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Current Lessons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-notification-feed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Notification Feed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#my-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        My Classes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="My Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Class List
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Class List">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-class-list-with-payment-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Class List with Payment Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schedule
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schedule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6-join-class-upload-activity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Join Class &amp; Upload Activity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-auto-attendance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Auto-Attendance
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#my-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        My Projects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="My Projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8-project-list-submit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Project List &amp; Submit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-view-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. View Feedback
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#progress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Progress
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Progress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reports
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reports">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10-assessment-progress-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Assessment &amp; Progress Tracking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-future-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Future Evaluation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teacher-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TEACHER PORTAL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TEACHER PORTAL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dashboard_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#12-view-profile-stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. View Profile &amp; Stats
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-stats-announcements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Stats &amp; Announcements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#courses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Courses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Courses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#my-courses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        My Courses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="My Courses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#14-createedit-course" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Create/Edit Course
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-submit-for-approval" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Submit for Approval
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schedule_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schedule
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schedule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#16-set-class-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Set Class Link
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-update-session-video-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Update Session Video URL
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#18-upload-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Upload Material
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#students" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Students
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Students">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#19-student-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Student Directory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-message-student" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Message Student
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attendance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attendance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attendance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-attendance-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Attendance Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grading
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grading">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assessment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assessment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#22-submission-inbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Submission Inbox
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-monitoring-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Monitoring Matrix
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admin-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ADMIN DASHBOARD
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ADMIN DASHBOARD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dashboard_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#24-kpi-widgets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. KPI Widgets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Users
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User List
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User List">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#25-user-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        25. User Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leads-trials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leads &amp; Trials
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Leads &amp; Trials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#26-trial-request-inbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        26. Trial Request Inbox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#courses_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Courses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Courses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#course-registry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Course Registry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Course Registry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#27-search-courses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27. Search Courses
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approvals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Approvals
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Approvals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#28-approval-queue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28. Approval Queue
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Class Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#29-create-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        29. Create Class
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#30-assign-teacher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        30. Assign Teacher
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-manage-enrollment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        31. Manage Enrollment
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Class Directory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Directory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#32-master-class-list-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        32. Master Class List &amp; Filters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Class Detail
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#33-roster-payment-status-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        33. Roster &amp; Payment Status Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projectassignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project/Assignment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project/Assignment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#global-project-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global Project View
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Global Project View">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#34-view-all-projects-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        34. View All Projects &amp; Assignments
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quality-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality Assessment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quality Assessment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#35-assess-teachers-and-students-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        35. Assess Teachers' and Students' Performance
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#public-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Content
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Public Content">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#36-ad-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        36. Ad Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reports_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reports
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reports">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analytics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analytics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#37-activity-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        37. Activity Tracker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-download-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        38. Download Reports
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Config
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Config">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#39-general-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        39. General Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PUBLIC SITE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PUBLIC SITE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#home" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Home
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Home">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#landing-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Landing Page
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Landing Page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#40-promotions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        40. Promotions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headernavigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header/Navigation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Header/Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-login-sso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        41. Login / SSO
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#courses_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Courses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Courses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Catalog
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Catalog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#42-filter-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        42. Filter &amp; Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#course-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Course Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Course Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#43-view-syllabus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        43. View Syllabus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-watch-sample" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        44. Watch Sample
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#join" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Join
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Join">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Registration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#45-book-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        45. Book Class
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-request-trial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        46. Request Trial
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#help" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Help
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Help">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#47-contact-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        47. Contact Form
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48-direct-contact-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        48. Direct Contact Info
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testimonials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testimonials
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testimonials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#49-review-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        49. Review List
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-functional-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CROSS-FUNCTIONAL FEATURES
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CROSS-FUNCTIONAL FEATURES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notifications
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messaging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Messaging
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search &amp; Filtering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reporting-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reporting &amp; Analytics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mobile-responsiveness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mobile Responsiveness
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-priorities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IMPLEMENTATION PRIORITIES
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IMPLEMENTATION PRIORITIES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-core-features-mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: Core Features (MVP)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-engagement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: Engagement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Advanced
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TECHNICAL NOTES
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TECHNICAL NOTES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication &amp; Authorization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Considerations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-feature-summary-by-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        APPENDIX: FEATURE SUMMARY BY ROLE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="APPENDIX: FEATURE SUMMARY BY ROLE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#student-features-11-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Student Features (11 features)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teacher-features-11-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teacher Features (11 features)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admin-features-16-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Admin Features (16 features)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-features-10-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Features (10 features)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#document-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Document Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#student-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STUDENT PORTAL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="STUDENT PORTAL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-view-profile-stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. View Profile &amp; Stats
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-classes-leaderboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Classes Leaderboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-current-lessons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Current Lessons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-notification-feed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Notification Feed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#my-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        My Classes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="My Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Class List
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Class List">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-class-list-with-payment-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Class List with Payment Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schedule
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schedule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6-join-class-upload-activity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Join Class &amp; Upload Activity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-auto-attendance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Auto-Attendance
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#my-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        My Projects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="My Projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8-project-list-submit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Project List &amp; Submit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-view-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. View Feedback
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#progress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Progress
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Progress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reports
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reports">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10-assessment-progress-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Assessment &amp; Progress Tracking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-future-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Future Evaluation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teacher-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TEACHER PORTAL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TEACHER PORTAL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dashboard_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#12-view-profile-stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. View Profile &amp; Stats
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-stats-announcements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Stats &amp; Announcements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#courses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Courses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Courses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#my-courses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        My Courses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="My Courses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#14-createedit-course" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Create/Edit Course
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-submit-for-approval" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Submit for Approval
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schedule_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schedule
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schedule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#16-set-class-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Set Class Link
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-update-session-video-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Update Session Video URL
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#18-upload-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Upload Material
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#students" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Students
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Students">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#19-student-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Student Directory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-message-student" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Message Student
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attendance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attendance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attendance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-attendance-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Attendance Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grading
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grading">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assessment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assessment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#22-submission-inbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Submission Inbox
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-monitoring-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Monitoring Matrix
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admin-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ADMIN DASHBOARD
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ADMIN DASHBOARD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dashboard_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#24-kpi-widgets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. KPI Widgets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Users
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User List
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User List">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#25-user-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        25. User Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leads-trials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leads &amp; Trials
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Leads &amp; Trials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#26-trial-request-inbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        26. Trial Request Inbox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#courses_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Courses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Courses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#course-registry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Course Registry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Course Registry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#27-search-courses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27. Search Courses
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approvals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Approvals
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Approvals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#28-approval-queue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28. Approval Queue
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Class Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#29-create-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        29. Create Class
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#30-assign-teacher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        30. Assign Teacher
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-manage-enrollment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        31. Manage Enrollment
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Class Directory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Directory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#32-master-class-list-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        32. Master Class List &amp; Filters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Class Detail
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#33-roster-payment-status-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        33. Roster &amp; Payment Status Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projectassignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project/Assignment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project/Assignment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#global-project-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global Project View
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Global Project View">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#34-view-all-projects-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        34. View All Projects &amp; Assignments
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quality-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality Assessment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quality Assessment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#35-assess-teachers-and-students-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        35. Assess Teachers' and Students' Performance
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#public-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Content
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Public Content">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#36-ad-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        36. Ad Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reports_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reports
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reports">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analytics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analytics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#37-activity-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        37. Activity Tracker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-download-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        38. Download Reports
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Config
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Config">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#39-general-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        39. General Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PUBLIC SITE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PUBLIC SITE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#home" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Home
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Home">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#landing-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Landing Page
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Landing Page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#40-promotions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        40. Promotions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headernavigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header/Navigation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Header/Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-login-sso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        41. Login / SSO
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#courses_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Courses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Courses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Catalog
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Catalog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#42-filter-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        42. Filter &amp; Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#course-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Course Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Course Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#43-view-syllabus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        43. View Syllabus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-watch-sample" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        44. Watch Sample
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#join" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Join
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Join">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Registration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#45-book-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        45. Book Class
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-request-trial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        46. Request Trial
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#help" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Help
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Help">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#47-contact-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        47. Contact Form
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48-direct-contact-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        48. Direct Contact Info
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testimonials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testimonials
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testimonials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#49-review-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        49. Review List
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-functional-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CROSS-FUNCTIONAL FEATURES
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CROSS-FUNCTIONAL FEATURES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notifications
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messaging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Messaging
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search &amp; Filtering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reporting-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reporting &amp; Analytics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mobile-responsiveness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mobile Responsiveness
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-priorities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IMPLEMENTATION PRIORITIES
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IMPLEMENTATION PRIORITIES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-core-features-mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: Core Features (MVP)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-engagement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: Engagement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Advanced
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TECHNICAL NOTES
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TECHNICAL NOTES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication &amp; Authorization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Considerations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-feature-summary-by-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        APPENDIX: FEATURE SUMMARY BY ROLE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="APPENDIX: FEATURE SUMMARY BY ROLE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#student-features-11-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Student Features (11 features)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teacher-features-11-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teacher Features (11 features)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admin-features-16-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Admin Features (16 features)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-features-10-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Features (10 features)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="codezero-system-features-product-requirements-document">CodeZero System Features - Product Requirements Document</h1>
+<h2 id="document-overview">Document Overview</h2>
+<p>This PRD outlines all system features for the CodeZero platform, organized by user role (Student, Teacher, Admin, Public). Each feature is detailed with user stories, acceptance criteria, and implementation remarks.</p>
+<hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#student-portal">Student Portal</a></li>
+<li><a href="#teacher-portal">Teacher Portal</a></li>
+<li><a href="#admin-dashboard">Admin Dashboard</a></li>
+<li><a href="#public-site">Public Site</a></li>
+</ol>
+<hr />
+<h2 id="student-portal">STUDENT PORTAL</h2>
+<h3 id="dashboard">Dashboard</h3>
+<h4 id="overview">Overview</h4>
+<p><strong>Section:</strong> Dashboard &gt; Overview</p>
+<h5 id="1-view-profile-stats">1. View Profile &amp; Stats</h5>
+<ul>
+<li><strong>Feature:</strong> Profile and progress summary display</li>
+<li><strong>User Story:</strong> As a Student, I want to view my profile and progress summary, so that I can see my status instantly.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display student name, avatar, and basic information</li>
+<li>Show current progress metrics (e.g., completed lessons, active courses)</li>
+<li>Display overall learning stats on first load</li>
+<li><strong>Implementation Notes:</strong> Quick snapshot of student's current standing</li>
+</ul>
+<h5 id="2-classes-leaderboard">2. Classes Leaderboard</h5>
+<ul>
+<li><strong>Feature:</strong> Class-specific leaderboard rankings</li>
+<li><strong>User Story:</strong> As a Student, I want to see the leaderboard rankings specifically for my class, so that I can compare my progress with my classmates.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display ranked list of classmates by performance metric</li>
+<li>Show current student's rank and position</li>
+<li>Include student name, score/points, and achievement badges</li>
+<li>Filter or sort by different metrics if applicable</li>
+<li><strong>Implementation Notes:</strong> Gamification element to encourage engagement</li>
+</ul>
+<h5 id="3-current-lessons">3. Current Lessons</h5>
+<ul>
+<li><strong>Feature:</strong> Live lesson access with join functionality</li>
+<li><strong>User Story:</strong> As a Student, I want to see a list of my lessons happening now with a "Join" link, so that I can enter the class immediately.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display lessons currently in progress</li>
+<li>Show lesson name, teacher name, and start time</li>
+<li>Include prominent "Join" button/link for each active lesson</li>
+<li>Auto-refresh or real-time update of lesson status</li>
+<li><strong>Implementation Notes:</strong> Critical for seamless class entry; should be the first action visible</li>
+</ul>
+<h5 id="4-notification-feed">4. Notification Feed</h5>
+<ul>
+<li><strong>Feature:</strong> Real-time notification center</li>
+<li><strong>User Story:</strong> As a Student, I want to see notifications for recent grades or teacher messages, so that I don't miss updates.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display notifications for: grades posted, feedback received, teacher messages, assignment reminders</li>
+<li>Show timestamp and notification sender</li>
+<li>Allow marking notifications as read/unread</li>
+<li>Provide notification history or archive</li>
+<li>Badge/indicator showing unread count</li>
+<li><strong>Implementation Notes:</strong> Reduce email overload; keep students informed via in-app notifications</li>
+</ul>
+<hr />
+<h3 id="my-classes">My Classes</h3>
+<h4 id="class-list">Class List</h4>
+<p><strong>Section:</strong> My Classes &gt; Class List</p>
+<h5 id="5-class-list-with-payment-verification">5. Class List with Payment Verification</h5>
+<ul>
+<li><strong>Feature:</strong> Scheduled classes with payment status badge</li>
+<li><strong>User Story:</strong> As a Student, I want to see a list of my scheduled classes with time and date. I want to see a "Payment Verified" badge on my class card, so that I know my booking is confirmed and safe.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display all enrolled classes in a card or list view</li>
+<li>Show: class name, schedule (day/time), teacher name</li>
+<li>Display "Payment Verified" badge for paid classes</li>
+<li>Show "Pending" or "Trial" status for unpaid/trial classes</li>
+<li>Sort by upcoming date/time</li>
+<li>Click to view class details or schedule information</li>
+<li><strong>Implementation Notes:</strong> Trust and transparency; payment verification is crucial for students</li>
+</ul>
+<h4 id="schedule">Schedule</h4>
+<p><strong>Section:</strong> My Classes &gt; Schedule</p>
+<h5 id="6-join-class-upload-activity">6. Join Class &amp; Upload Activity</h5>
+<ul>
+<li><strong>Feature:</strong> Class participation and post-class activity submission</li>
+<li><strong>User Story:</strong> As a Student, I want to join valid lessons and upload my activity/video after class, so that I can complete the session.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Clickable "Join" button links to lesson meeting</li>
+<li>After class ends, provide upload form for activity/project files</li>
+<li>Support video uploads (recorded during or after class)</li>
+<li>Allow multiple file types (PDF, document, video, image)</li>
+<li>Show submission confirmation and receipt</li>
+<li>Display upload deadline if applicable</li>
+<li><strong>Implementation Notes:</strong> </li>
+<li>After class completion, students upload activity/project during learning session</li>
+<li>Students upload/submit via link provided</li>
+<li>Teacher will upload video after class finishes (recorded by teacher)</li>
+<li>Track submission timestamps for grading</li>
+</ul>
+<h5 id="7-auto-attendance">7. Auto-Attendance</h5>
+<ul>
+<li><strong>Feature:</strong> Automatic attendance marking upon class join</li>
+<li><strong>User Story:</strong> As a Student, I want my status to automatically change to "Present" the moment I click the "Join Class" button, so that I get credit for attending without needing to manually sign in.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Attendance status updates immediately to "Present" on "Join" button click</li>
+<li>Record timestamp of attendance</li>
+<li>No manual sign-in form required</li>
+<li>Show attendance confirmation message</li>
+<li>Display attendance history in student profile/dashboard</li>
+<li><strong>Implementation Notes:</strong> Streamline class entry; remove friction from attendance process</li>
+</ul>
+<hr />
+<h3 id="projects">Projects</h3>
+<h4 id="my-projects">My Projects</h4>
+<p><strong>Section:</strong> Projects &gt; My Projects</p>
+<h5 id="8-project-list-submit">8. Project List &amp; Submit</h5>
+<ul>
+<li><strong>Feature:</strong> View and submit projects/assignments</li>
+<li><strong>User Story:</strong> As a Student, I want to view new projects from the teacher and submit my work via link, so that I can complete the assignment.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display list of active projects assigned by teacher</li>
+<li>Show project title, description, and due date</li>
+<li>Include "Submit" button or link for each project</li>
+<li>Provide submission form or file upload interface</li>
+<li>Display project status (Not Started, In Progress, Submitted, Graded)</li>
+<li>Allow resubmission before deadline if allowed</li>
+<li><strong>Implementation Notes:</strong> </li>
+<li>Teacher creates new projects/assignments</li>
+<li>Students view projects and submit work via provided link</li>
+<li>Maintain project history</li>
+</ul>
+<h5 id="9-view-feedback">9. View Feedback</h5>
+<ul>
+<li><strong>Feature:</strong> Grade and feedback review</li>
+<li><strong>User Story:</strong> As a Student, I want to view the teacher's grade and feedback on my past submissions, so that I can improve.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display list of graded projects/submissions</li>
+<li>Show grade/score prominently</li>
+<li>Display teacher's written feedback and comments</li>
+<li>Include grading rubric or evaluation criteria if available</li>
+<li>Show grading date</li>
+<li>Allow student to download feedback document</li>
+<li><strong>Implementation Notes:</strong> Learning reinforcement; essential for student improvement</li>
+</ul>
+<hr />
+<h3 id="progress">Progress</h3>
+<h4 id="reports">Reports</h4>
+<p><strong>Section:</strong> Progress &gt; Reports</p>
+<h5 id="10-assessment-progress-tracking">10. Assessment &amp; Progress Tracking</h5>
+<ul>
+<li><strong>Feature:</strong> Course progress and module assessments</li>
+<li><strong>User Story:</strong> As a Student, I want to view my course progress and take module assessments, so that I can track my learning.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display overall course progress percentage</li>
+<li>Show breakdown by module or unit</li>
+<li>Display completed vs. remaining lessons</li>
+<li>Provide access to take module/monthly assessments</li>
+<li>Show assessment scores and results</li>
+<li>Display learning timeline or milestone markers</li>
+<li><strong>Implementation Notes:</strong> </li>
+<li>Assessment conducted for 1 module or 1 month on student project and in-class activities</li>
+<li>Comprehensive tracking of student achievement</li>
+</ul>
+<h5 id="11-future-evaluation">11. Future Evaluation</h5>
+<ul>
+<li><strong>Feature:</strong> Course recommendations and evaluation guidance</li>
+<li><strong>User Story:</strong> As a Student, I want to view evaluations for future class recommendations, so that I know what to study next.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display evaluation results from completed courses</li>
+<li>Suggest recommended next courses based on performance</li>
+<li>Show skill level progression</li>
+<li>Provide learning path recommendations</li>
+<li>Display prerequisites for advanced courses</li>
+<li><strong>Implementation Notes:</strong> Help students plan their learning journey; project progress and evaluation for future courses</li>
+</ul>
+<hr />
+<h2 id="teacher-portal">TEACHER PORTAL</h2>
+<h3 id="dashboard_1">Dashboard</h3>
+<h4 id="overview_1">Overview</h4>
+<p><strong>Section:</strong> Dashboard &gt; Overview</p>
+<h5 id="12-view-profile-stats">12. View Profile &amp; Stats</h5>
+<ul>
+<li><strong>Feature:</strong> Teacher profile creation and management</li>
+<li><strong>User Story:</strong> As a Teacher, I want to upload my photo and write a short bio, so that prospective students and parents can view my qualifications on the public Course Details page.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Allow photo/avatar upload (drag &amp; drop or browse)</li>
+<li>Provide text editor for bio/qualifications</li>
+<li>Display preview of public profile</li>
+<li>Save and publish profile updates</li>
+<li>Show profile completion percentage</li>
+<li><strong>Implementation Notes:</strong> Public-facing profile enhances credibility and student enrollment</li>
+</ul>
+<h5 id="13-stats-announcements">13. Stats &amp; Announcements</h5>
+<ul>
+<li><strong>Feature:</strong> Dashboard widget with teaching workload overview</li>
+<li><strong>User Story:</strong> As a Teacher, I want to view my total courses, total students, assignment statuses, upcoming classes, and recent announcements on one screen, so that I can manage my teaching workload effectively.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display KPI widgets: Total Active Courses, Total Enrolled Students</li>
+<li>Show assignment submission status (pending review, graded, etc.)</li>
+<li>Display next 3-5 upcoming classes with time/room info</li>
+<li>Show recent announcements or platform updates</li>
+<li>Widget selection/customization (can select which to display)</li>
+<li>One-click navigation to detailed sections</li>
+<li><strong>Implementation Notes:</strong> Comprehensive workload overview; customizable widgets</li>
+</ul>
+<hr />
+<h3 id="courses">Courses</h3>
+<h4 id="my-courses">My Courses</h4>
+<p><strong>Section:</strong> Courses &gt; My Courses</p>
+<h5 id="14-createedit-course">14. Create/Edit Course</h5>
+<ul>
+<li><strong>Feature:</strong> Course content creation and management</li>
+<li><strong>User Story:</strong> As a Teacher, I want to create a new course or edit details, so that I can build content.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Form to input: course title, description, category, level, duration</li>
+<li>Ability to structure course into modules/units</li>
+<li>Add learning objectives and syllabus</li>
+<li>Upload course materials (curriculum documents)</li>
+<li>Save as draft or publish</li>
+<li>Edit existing courses and versions</li>
+<li><strong>Implementation Notes:</strong> Core feature for teacher content creation</li>
+</ul>
+<h5 id="15-submit-for-approval">15. Submit for Approval</h5>
+<ul>
+<li><strong>Feature:</strong> Course submission workflow for admin approval</li>
+<li><strong>User Story:</strong> As a Teacher, I want a button to submit my finalized course to Admin, so that it can be approved.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display "Submit for Approval" button on completed course</li>
+<li>Show submission checklist (required fields validation)</li>
+<li>Record submission timestamp and version</li>
+<li>Provide feedback notification when course is approved/rejected</li>
+<li>Allow resubmission after edits</li>
+<li><strong>Implementation Notes:</strong> </li>
+<li>Upload course content, activities, and recorded videos</li>
+<li>Quality control mechanism for platform consistency</li>
+</ul>
+<hr />
+<h3 id="classes">Classes</h3>
+<h4 id="schedule_1">Schedule</h4>
+<p><strong>Section:</strong> Classes &gt; Schedule</p>
+<h5 id="16-set-class-link">16. Set Class Link</h5>
+<ul>
+<li><strong>Feature:</strong> Online meeting link and schedule management</li>
+<li><strong>User Story:</strong> As a Teacher, I want to add/update the online meeting link and time for a specific class slot, so that students can join.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Form to input meeting link (Google Meet, Zoom, etc.)</li>
+<li>Set or adjust class time and duration</li>
+<li>Save and publish link to students</li>
+<li>Edit link before class starts</li>
+<li>Display link in teacher view and student view</li>
+<li><strong>Implementation Notes:</strong> Flexible for different meeting platforms</li>
+</ul>
+<h5 id="17-update-session-video-url">17. Update Session Video URL</h5>
+<ul>
+<li><strong>Feature:</strong> Post-class video recording management</li>
+<li><strong>User Story:</strong> As a Teacher, I want to update the video url link after the session via google meet completed for students that haven't joined can view the video later.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Provide field to add/update video link after class</li>
+<li>Link is accessible to students who missed the live session</li>
+<li>Display video availability status</li>
+<li>Allow video to be recorded during class (via Google Meet integration)</li>
+<li>Show video upload/link deadline</li>
+<li>Notify students of video availability</li>
+<li><strong>Implementation Notes:</strong> Important for asynchronous learning; students can catch up on missed classes</li>
+</ul>
+<h4 id="resources">Resources</h4>
+<p><strong>Section:</strong> Classes &gt; Resources</p>
+<h5 id="18-upload-material">18. Upload Material</h5>
+<ul>
+<li><strong>Feature:</strong> Learning resource management and distribution</li>
+<li><strong>User Story:</strong> As a Teacher, I want to upload slides, homework, and videos to a specific class instance, so that students can access them.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>File upload interface for slides (PPT, PDF, images)</li>
+<li>Upload homework assignments and instructions</li>
+<li>Upload/link videos (course recordings, tutorials)</li>
+<li>Organize materials by module or date</li>
+<li>Set visibility/release date for materials</li>
+<li>Download management and version control</li>
+<li>File preview/preview capability</li>
+<li><strong>Implementation Notes:</strong> </li>
+<li>Upload course materials, activities, and recorded videos</li>
+<li>Multiple file type support for diverse learning resources</li>
+</ul>
+<h4 id="students">Students</h4>
+<p><strong>Section:</strong> Classes &gt; Students</p>
+<h5 id="19-student-directory">19. Student Directory</h5>
+<ul>
+<li><strong>Feature:</strong> Class roster management and student filtering</li>
+<li><strong>User Story:</strong> As a Teacher, I want to filter students by class and view their profiles, so that I can know who is in my class.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display list of all students in selected class</li>
+<li>Show student names, enrollment status, payment status</li>
+<li>Filter or search by name, enrollment date, status</li>
+<li>Click to view student profile and performance</li>
+<li>Display student contact information</li>
+<li><strong>Implementation Notes:</strong> Class management and student recognition</li>
+</ul>
+<h5 id="20-message-student">20. Message Student</h5>
+<ul>
+<li><strong>Feature:</strong> Private direct messaging with students</li>
+<li><strong>User Story:</strong> As a Teacher, I want to click a "Message" button on a student's profile, so that I can communicate privately.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>"Message" button on each student profile</li>
+<li>Open messaging interface/compose screen</li>
+<li>Show message history with selected student</li>
+<li>Send and receive messages</li>
+<li>Notification for new messages</li>
+<li>Optional: File/resource sharing in messages</li>
+<li><strong>Implementation Notes:</strong> Improve communication; personal touch for student support</li>
+</ul>
+<h4 id="attendance">Attendance</h4>
+<p><strong>Section:</strong> Classes &gt; Attendance</p>
+<h5 id="21-attendance-review">21. Attendance Review</h5>
+<ul>
+<li><strong>Feature:</strong> Attendance verification and manual correction</li>
+<li><strong>User Story:</strong> As a Teacher, I want to verify the automated attendance records (marked when students joined) and manually correct any errors, so that the class records are accurate.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display auto-marked attendance records for selected class/date</li>
+<li>Show list of students with Present/Absent status</li>
+<li>Allow manual editing of attendance status</li>
+<li>Add notes or reasons for absent students</li>
+<li>View attendance history for the class</li>
+<li>Export attendance report</li>
+<li><strong>Implementation Notes:</strong> Override auto-attendance if issues occur; maintain accurate records</li>
+</ul>
+<hr />
+<h3 id="grading">Grading</h3>
+<h4 id="assessment">Assessment</h4>
+<p><strong>Section:</strong> Grading &gt; Assessment</p>
+<h5 id="22-submission-inbox">22. Submission Inbox</h5>
+<ul>
+<li><strong>Feature:</strong> Student submission review and grading workspace</li>
+<li><strong>User Story:</strong> As a Teacher, I want to view a list of student project submissions, so that I can begin grading.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display all pending student submissions in chronological or custom order</li>
+<li>Show: student name, assignment name, submission date, file preview</li>
+<li>Filter by assignment, student, or submission date</li>
+<li>Click to open submission for detailed review</li>
+<li>Mark submission as graded/reviewed</li>
+<li>Provide feedback form for each submission</li>
+<li><strong>Implementation Notes:</strong> </li>
+<li>View student project submissions</li>
+<li>Provide feedback to each student</li>
+<li>Streamline grading workflow</li>
+</ul>
+<h5 id="23-monitoring-matrix">23. Monitoring Matrix</h5>
+<ul>
+<li><strong>Feature:</strong> Class-wide performance overview</li>
+<li><strong>User Story:</strong> As a Teacher, I want to view a matrix of the whole class's progress, so that I can spot struggling students.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display matrix/grid: rows = students, columns = assignments/assessments</li>
+<li>Show grade/score in each cell</li>
+<li>Color-coding for performance levels (green = good, red = struggling)</li>
+<li>Click on cell to view detailed student work</li>
+<li>Identify at-risk or struggling students</li>
+<li>Filter by assignment or performance threshold</li>
+<li>Export or print matrix report</li>
+<li><strong>Implementation Notes:</strong> Identify struggling students quickly; data-driven teaching</li>
+</ul>
+<hr />
+<h2 id="admin-dashboard">ADMIN DASHBOARD</h2>
+<h3 id="dashboard_2">Dashboard</h3>
+<h4 id="overview_2">Overview</h4>
+<p><strong>Section:</strong> Dashboard &gt; Overview</p>
+<h5 id="24-kpi-widgets">24. KPI Widgets</h5>
+<ul>
+<li><strong>Feature:</strong> System health monitoring dashboard</li>
+<li><strong>User Story:</strong> As an Admin, I want to view Total Users, Total Courses, and Active Users, so that I can monitor system health.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Widget 1: Total Users (Student, Teacher, Admin counts)</li>
+<li>Widget 2: Total Courses (active, pending approval, archived)</li>
+<li>Widget 3: Active Users (logged in today, this week)</li>
+<li>Widget 4: Revenue/Payment Status (if applicable)</li>
+<li>Real-time or hourly data updates</li>
+<li>Click-through to detailed reports</li>
+<li>Customizable time range filters</li>
+<li><strong>Implementation Notes:</strong> Executive overview of platform performance</li>
+</ul>
+<hr />
+<h3 id="users">Users</h3>
+<h4 id="user-list">User List</h4>
+<p><strong>Section:</strong> Users &gt; User List</p>
+<h5 id="25-user-management">25. User Management</h5>
+<ul>
+<li><strong>Feature:</strong> Full user CRUD operations</li>
+<li><strong>User Story:</strong> As an Admin, I want to view all users and use "Create/Edit/Delete" actions, so that I manage access.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display list of all users (Students, Teachers, Admins)</li>
+<li>Show: username, email, role, registration date, status (active/inactive)</li>
+<li>Create new user form (name, email, role, password)</li>
+<li>Edit user information and role</li>
+<li>Deactivate or delete user accounts</li>
+<li>Search/filter by name, email, role</li>
+<li>Bulk actions (bulk activate, deactivate, delete)</li>
+<li>View user activity/login history</li>
+<li><strong>Implementation Notes:</strong> Central user management; enable/disable access as needed</li>
+</ul>
+<h4 id="leads-trials">Leads &amp; Trials</h4>
+<p><strong>Section:</strong> Users &gt; Leads &amp; Trials</p>
+<h5 id="26-trial-request-inbox">26. Trial Request Inbox</h5>
+<ul>
+<li><strong>Feature:</strong> Centralized trial request management</li>
+<li><strong>User Story:</strong> As an Admin, I want to view a centralized list of all "Free Trial" requests coming from Telegram, so that I can follow up and convert them into enrolled students without searching through chat logs.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display all trial requests in a dedicated inbox</li>
+<li>Show: requester name, email, contact info (Telegram), request date</li>
+<li>Mark request as "Reviewed", "Contacted", "Converted", or "Rejected"</li>
+<li>Click to send follow-up message or email template</li>
+<li>Track conversion status</li>
+<li>Set reminders for follow-up</li>
+<li>Export lead list for CRM integration</li>
+<li><strong>Implementation Notes:</strong> </li>
+<li>Requests come from Telegram registration</li>
+<li>Eliminates need to search through chat logs</li>
+<li>Improves lead conversion tracking</li>
+</ul>
+<hr />
+<h3 id="courses_1">Courses</h3>
+<h4 id="course-registry">Course Registry</h4>
+<p><strong>Section:</strong> Courses &gt; Course Registry</p>
+<h5 id="27-search-courses">27. Search Courses</h5>
+<ul>
+<li><strong>Feature:</strong> Course discovery and search</li>
+<li><strong>User Story:</strong> As an Admin, I want to search courses by Teacher Name, so that I can find specific content.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Search field for course title and teacher name</li>
+<li>Filter by category, level, status (active, pending, archived)</li>
+<li>Display results with: course name, teacher, category, enrollment count</li>
+<li>Click to view course details</li>
+<li>View course syllabus and materials</li>
+<li><strong>Implementation Notes:</strong> Quick course lookup; monitor course inventory</li>
+</ul>
+<h4 id="approvals">Approvals</h4>
+<p><strong>Section:</strong> Courses &gt; Approvals</p>
+<h5 id="28-approval-queue">28. Approval Queue</h5>
+<ul>
+<li><strong>Feature:</strong> Teacher course approval workflow</li>
+<li><strong>User Story:</strong> As an Admin, I want to view courses submitted by teachers and click "Approve" or "Edit," so that quality is maintained.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display queue of pending course submissions</li>
+<li>Show: course title, teacher name, submission date, preview</li>
+<li>"Approve" button to publish course</li>
+<li>"Edit" button to request changes or edit course</li>
+<li>Add approval notes or feedback</li>
+<li>Send approval/rejection notification to teacher</li>
+<li>Track approval history and timestamps</li>
+<li><strong>Implementation Notes:</strong> Quality assurance gate; ensure platform standards</li>
+</ul>
+<hr />
+<h3 id="classes_1">Classes</h3>
+<h4 id="class-management">Class Management</h4>
+<p><strong>Section:</strong> Classes &gt; Class Management</p>
+<h5 id="29-create-class">29. Create Class</h5>
+<ul>
+<li><strong>Feature:</strong> Class instance creation and setup</li>
+<li><strong>User Story:</strong> As an Admin, I want to create a class instance (e.g., "Junior Code A") and assign a category, so that the schedule is built.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Form to input: class name, course link, category, level</li>
+<li>Select schedule template or create custom schedule</li>
+<li>Set capacity/max students</li>
+<li>Assign time slots (day, time, duration)</li>
+<li>Publish class for enrollment</li>
+<li>Save as draft before publishing</li>
+<li><strong>Implementation Notes:</strong> Build the class catalog</li>
+</ul>
+<h5 id="30-assign-teacher">30. Assign Teacher</h5>
+<ul>
+<li><strong>Feature:</strong> Teacher-to-class assignment</li>
+<li><strong>User Story:</strong> As an Admin, I want to assign a specific teacher to a class instance, so that the class has an instructor.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Dropdown or search to select teacher from database</li>
+<li>Display teacher profile and qualifications preview</li>
+<li>Assign/reassign teachers to class</li>
+<li>Confirm assignment and send notification to teacher</li>
+<li>Show class assignment to teacher in their dashboard</li>
+<li>Allow unassigning if needed</li>
+<li><strong>Implementation Notes:</strong> Link instructors to classes</li>
+</ul>
+<h5 id="31-manage-enrollment">31. Manage Enrollment</h5>
+<ul>
+<li><strong>Feature:</strong> Student enrollment and status management</li>
+<li><strong>User Story:</strong> As an Admin, I want to add students to a class and update their status, so that records are accurate.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Add individual students to class by name/email search</li>
+<li>Bulk import students (CSV file)</li>
+<li>Update enrollment status: Active, Waitlist, Inactive, Dropped</li>
+<li>Update payment status: Paid, Pending, Trial</li>
+<li>Set enrollment date and trial expiry</li>
+<li>Remove students from class</li>
+<li>View enrollment history</li>
+<li><strong>Implementation Notes:</strong> Student roster management; payment tracking</li>
+</ul>
+<h4 id="class-directory">Class Directory</h4>
+<p><strong>Section:</strong> Classes &gt; Class Directory</p>
+<h5 id="32-master-class-list-filters">32. Master Class List &amp; Filters</h5>
+<ul>
+<li><strong>Feature:</strong> Comprehensive class inventory with filtering</li>
+<li><strong>User Story:</strong> As an Admin, I want to view a master list of all classes and filter by Teacher, Day, or Status, so that I can quickly locate specific sessions without searching one by one.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display table/list of all class instances</li>
+<li>Columns: Class Name, Teacher, Schedule (Day/Time), Students (e.g., 10/12 Paid), Status</li>
+<li>Filter by: Teacher name, Day of week, Status (Active, Pending, Archived)</li>
+<li>Search by class name or keyword</li>
+<li>Sort by any column</li>
+<li>Click row to view class details</li>
+<li>Show capacity utilization (10/12 students)</li>
+<li>Multi-select for bulk actions</li>
+<li><strong>Implementation Notes:</strong> Central view of entire class schedule; operational management</li>
+</ul>
+<h4 id="class-detail">Class Detail</h4>
+<p><strong>Section:</strong> Classes &gt; Class Detail</p>
+<h5 id="33-roster-payment-status-management">33. Roster &amp; Payment Status Management</h5>
+<ul>
+<li><strong>Feature:</strong> Detailed class roster with payment verification</li>
+<li><strong>User Story:</strong> As an Admin, I want to click on a class to see the full student roster with their Payment Status (Paid/Pending/Trial) and be able to manually toggle it, so that I can verify who is allowed to be in the room.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display full roster for selected class</li>
+<li>Columns: Student Name, Email, Phone, Status (Paid/Pending/Trial)</li>
+<li>Click toggle to change payment status</li>
+<li>Confirm status changes with notification</li>
+<li>View payment history/transaction details</li>
+<li>Identify and flag unpaid students</li>
+<li>Remove students from class if needed</li>
+<li>Print or export roster</li>
+<li><strong>Implementation Notes:</strong> Access control and payment verification; trust/safety critical</li>
+</ul>
+<hr />
+<h3 id="projectassignment">Project/Assignment</h3>
+<h4 id="global-project-view">Global Project View</h4>
+<p><strong>Section:</strong> Project/Assignment &gt; Global Project View</p>
+<h5 id="34-view-all-projects-assignments">34. View All Projects &amp; Assignments</h5>
+<ul>
+<li><strong>Feature:</strong> Platform-wide project monitoring</li>
+<li><strong>User Story:</strong> As an Admin, I want to view every project and assignment created by all teachers, so that I can monitor the quality and consistency of the curriculum across the platform.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display all projects/assignments from all teachers</li>
+<li>Show: project title, teacher name, course, creation date, status</li>
+<li>Filter by teacher, course, or date range</li>
+<li>Search by project name or keywords</li>
+<li>View project description, rubric, and expected submissions</li>
+<li>Click to preview project details</li>
+<li>Archive or remove projects if needed</li>
+<li>Track submission counts per project</li>
+<li><strong>Implementation Notes:</strong> Quality assurance and curriculum consistency monitoring</li>
+</ul>
+<hr />
+<h3 id="performance">Performance</h3>
+<h4 id="quality-assessment">Quality Assessment</h4>
+<p><strong>Section:</strong> Performance &gt; Quality Assessment</p>
+<h5 id="35-assess-teachers-and-students-performance">35. Assess Teachers' and Students' Performance</h5>
+<ul>
+<li><strong>Feature:</strong> Comprehensive performance analytics</li>
+<li><strong>User Story:</strong> As an Admin, I want to review the performance metrics of both teachers and students, so that I can identify high-performers and those needing additional support.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Teacher metrics: Course completion rate, student satisfaction (if surveyed), assignment submission rates, average grade distribution</li>
+<li>Student metrics: Course progress %, average scores, attendance rate, assignment completion rate, engagement level</li>
+<li>Sortable leaderboards (top teachers, top students)</li>
+<li>Identify low performers requiring support/intervention</li>
+<li>Filter by course, time period, or cohort</li>
+<li>Drill-down to individual performance details</li>
+<li>Generate performance comparison reports</li>
+<li>Create alerts/flags for at-risk students or underperforming teachers</li>
+<li><strong>Implementation Notes:</strong> Data-driven platform improvement and targeted support</li>
+</ul>
+<hr />
+<h3 id="content">Content</h3>
+<h4 id="public-content">Public Content</h4>
+<p><strong>Section:</strong> Content &gt; Public Content</p>
+<h5 id="36-ad-manager">36. Ad Manager</h5>
+<ul>
+<li><strong>Feature:</strong> Marketing content and promotions management</li>
+<li><strong>User Story:</strong> As an Admin, I want to post content for advertisements and new class promotions, so that the public site is updated.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Create/edit promotional banners and slides</li>
+<li>Upload promotional images and videos</li>
+<li>Write promotional text/descriptions</li>
+<li>Schedule promotion visibility dates</li>
+<li>Display promotions on public landing page</li>
+<li>Track promotion clicks/impressions (if analytics available)</li>
+<li>Featured class section management</li>
+<li>Remove expired promotions</li>
+<li><strong>Implementation Notes:</strong> Drive enrollment through marketing content</li>
+</ul>
+<hr />
+<h3 id="reports_1">Reports</h3>
+<h4 id="analytics">Analytics</h4>
+<p><strong>Section:</strong> Reports &gt; Analytics</p>
+<h5 id="37-activity-tracker">37. Activity Tracker</h5>
+<ul>
+<li><strong>Feature:</strong> System-wide activity auditing and logging</li>
+<li><strong>User Story:</strong> As an Admin, I want to view logs of teacher and student activities, so that I can audit usage.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display chronological log of activities: login, course access, content upload, grading</li>
+<li>Filter by user, activity type, date range</li>
+<li>Show: user name, activity, timestamp, affected resource</li>
+<li>Search for specific activities or users</li>
+<li>Export activity logs for compliance/audit</li>
+<li>Track attendance and session duration</li>
+<li>Identify suspicious activity</li>
+<li><strong>Implementation Notes:</strong> Audit trail for compliance and platform monitoring</li>
+</ul>
+<h5 id="38-download-reports">38. Download Reports</h5>
+<ul>
+<li><strong>Feature:</strong> Report generation and export</li>
+<li><strong>User Story:</strong> As an Admin, I want to click "Generate Report" for student progress or teacher performance, so that I have offline records.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Report templates: Student Progress Report, Teacher Performance Report, Course Analytics</li>
+<li>Select filters (date range, course, cohort, etc.)</li>
+<li>Generate report in PDF or Excel format</li>
+<li>Include charts, graphs, and summary tables</li>
+<li>Download or email report</li>
+<li>Schedule recurring reports (if needed)</li>
+<li>Archive historical reports</li>
+<li><strong>Implementation Notes:</strong> Business intelligence and record-keeping</li>
+</ul>
+<hr />
+<h3 id="settings">Settings</h3>
+<h4 id="system-config">System Config</h4>
+<p><strong>Section:</strong> Settings &gt; System Config</p>
+<h5 id="39-general-settings">39. General Settings</h5>
+<ul>
+<li><strong>Feature:</strong> Platform configuration and system parameters</li>
+<li><strong>User Story:</strong> As an Admin, I want to set the System Name, Maintenance Mode, and Default Locale, so that the platform is configured correctly.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>System Name: update platform branding/display name</li>
+<li>Maintenance Mode: enable/disable with display message (for planned downtime)</li>
+<li>Default Locale: set language and timezone defaults</li>
+<li>Email settings: SMTP configuration for notifications</li>
+<li>Payment settings: currency, payment methods (if applicable)</li>
+<li>File upload settings: file size limits, allowed formats</li>
+<li>Integration settings: Telegram bot, Google Meet API credentials</li>
+<li>Save and test configurations</li>
+<li>Audit log of configuration changes</li>
+<li><strong>Implementation Notes:</strong> Core platform administration; affects all users</li>
+</ul>
+<hr />
+<h2 id="public-site">PUBLIC SITE</h2>
+<h3 id="home">Home</h3>
+<h4 id="landing-page">Landing Page</h4>
+<p><strong>Section:</strong> Home &gt; Landing Page</p>
+<h5 id="40-promotions">40. Promotions</h5>
+<ul>
+<li><strong>Feature:</strong> Class promotions and featured content</li>
+<li><strong>User Story:</strong> As a Visitor, I want to see upcoming class promotions, so that I am encouraged to explore.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display promotional banners/carousel on landing page</li>
+<li>Show featured courses or special offers</li>
+<li>Include promotional images, titles, and brief descriptions</li>
+<li>Click through to course details or registration</li>
+<li>Rotate promotions or update regularly</li>
+<li><strong>Implementation Notes:</strong> Increase discoverability and enrollment</li>
+</ul>
+<h4 id="headernavigation">Header/Navigation</h4>
+<p><strong>Section:</strong> Home &gt; Header/Nav</p>
+<h5 id="41-login-sso">41. Login / SSO</h5>
+<ul>
+<li><strong>Feature:</strong> User authentication and role-based access</li>
+<li><strong>User Story:</strong> As a Visitor, I want to log in using Telegram (if I am a Student) or Email/Password (if I am a Teacher/Admin), so that I can access the correct dashboard.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Telegram login button for students<ul>
+<li>Register/login via Telegram</li>
+<li>Telegram profile/ID verification</li>
+<li>Option to link email address to Telegram account later</li>
+</ul>
+</li>
+<li>Email/Password login for teachers and admins</li>
+<li>Forgot password recovery flow</li>
+<li>Dashboard redirect based on user role</li>
+<li>Session management (login/logout)</li>
+<li>Remember me option</li>
+<li><strong>Implementation Notes:</strong> </li>
+<li>Students: Register via Telegram (can link Email later)</li>
+<li>Admins/Teachers: Email &amp; Password only</li>
+<li>Telegram login acts as phone number verification (cost savings - no SMS OTP needed)</li>
+<li>Seamless experience across roles</li>
+</ul>
+<hr />
+<h3 id="courses_2">Courses</h3>
+<h4 id="catalog">Catalog</h4>
+<p><strong>Section:</strong> Courses &gt; Catalog</p>
+<h5 id="42-filter-search">42. Filter &amp; Search</h5>
+<ul>
+<li><strong>Feature:</strong> Course discovery with filtering options</li>
+<li><strong>User Story:</strong> As a Visitor, I want to filter courses by category, age, or skill level, so that I find relevant classes.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Search box for course title and keywords</li>
+<li>Filter options: Category dropdown, Age group, Skill level (Beginner/Intermediate/Advanced)</li>
+<li>Display filtered course results as cards or list</li>
+<li>Show: course title, teacher name, price (if any), student count, rating</li>
+<li>Sort by name, popularity, newest, price</li>
+<li>Click to view course details</li>
+<li>Show number of matching results</li>
+<li><strong>Implementation Notes:</strong> Help visitors find relevant courses quickly</li>
+</ul>
+<h4 id="course-details">Course Details</h4>
+<p><strong>Section:</strong> Courses &gt; Course Details</p>
+<h5 id="43-view-syllabus">43. View Syllabus</h5>
+<ul>
+<li><strong>Feature:</strong> Course curriculum and instructor information</li>
+<li><strong>User Story:</strong> As a Visitor, I want to read the curriculum and teacher profile, so that I understand what is being taught.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display course title, description, and overview</li>
+<li>Show teacher profile: name, photo, bio, qualifications</li>
+<li>Course syllabus: modules, topics, learning objectives</li>
+<li>Course duration, schedule, and price</li>
+<li>Student enrollment count and reviews/ratings</li>
+<li>Prerequisites if any</li>
+<li>Share course link</li>
+<li><strong>Implementation Notes:</strong> Build trust through transparency</li>
+</ul>
+<h5 id="44-watch-sample">44. Watch Sample</h5>
+<ul>
+<li><strong>Feature:</strong> Sample lesson video preview</li>
+<li><strong>User Story:</strong> As a Visitor, I want to click "Play" on a sample video/trial lesson, so that I can see the teaching style.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display embedded video player for sample lesson</li>
+<li>Show video title, duration, and description</li>
+<li>Video playback controls and fullscreen option</li>
+<li>Display class name and teacher for sample video</li>
+<li>Option to download transcript or notes (if available)</li>
+<li>Call-to-action button after video: "Book a Trial" or "Enroll Now"</li>
+<li><strong>Implementation Notes:</strong> Preview teaching quality; reduce enrollment hesitation</li>
+</ul>
+<hr />
+<h3 id="join">Join</h3>
+<h4 id="registration">Registration</h4>
+<p><strong>Section:</strong> Join &gt; Registration</p>
+<h5 id="45-book-class">45. Book Class</h5>
+<ul>
+<li><strong>Feature:</strong> Student registration and class booking</li>
+<li><strong>User Story:</strong> As a Visitor, I want to register/login with Telegram to verify my identity before booking a class, so that I don't need to pay for SMS OTP.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Telegram login/registration on registration form</li>
+<li>Select desired course and class instance</li>
+<li>Confirm booking (date, time, price)</li>
+<li>Payment handled separately/externally by admin</li>
+<li>Send booking confirmation email</li>
+<li>Add class to student calendar</li>
+<li>Receive class details and join link via email/notification</li>
+<li><strong>Implementation Notes:</strong> </li>
+<li>Telegram login acts as phone verification (cost saving - no SMS OTP)</li>
+<li>Payment done externally from admin dashboard directly with students</li>
+<li>Streamlined registration process</li>
+</ul>
+<h5 id="46-request-trial">46. Request Trial</h5>
+<ul>
+<li><strong>Feature:</strong> Free trial request submission</li>
+<li><strong>User Story:</strong> As a Visitor, I want to request a trial by clicking "Start with Telegram", so that my request is instantly verified and sent to the Admin.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>"Request Trial" button on course page</li>
+<li>Trigger Telegram login for verification</li>
+<li>Collect additional info: name, age, interests (optional)</li>
+<li>Send trial request to admin inbox instantly</li>
+<li>Send confirmation to user: "Request Received"</li>
+<li>Admin receives Telegram bot alert for new trial request</li>
+<li>Track trial request status (Pending, Approved, Completed)</li>
+<li><strong>Implementation Notes:</strong> </li>
+<li>Replaces SMS OTP verification</li>
+<li>Telegram bot notifies admin of new trial requests instantly</li>
+<li>Faster qualification process</li>
+</ul>
+<hr />
+<h3 id="support">Support</h3>
+<h4 id="help">Help</h4>
+<p><strong>Section:</strong> Support &gt; Help</p>
+<h5 id="47-contact-form">47. Contact Form</h5>
+<ul>
+<li><strong>Feature:</strong> Customer support inquiry form</li>
+<li><strong>User Story:</strong> As a Visitor, I want to use a contact form or chat, so that I can ask for support.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Contact form with fields: name, email, subject, message</li>
+<li>Optional: file attachment (for screenshots, etc.)</li>
+<li>Dropdown for inquiry type (billing, technical, other)</li>
+<li>Form validation (required fields, email format)</li>
+<li>Submission confirmation message</li>
+<li>Support ticket creation and tracking number</li>
+<li>Email copy of inquiry to visitor</li>
+<li><strong>Implementation Notes:</strong> Multiple support channels</li>
+</ul>
+<h5 id="48-direct-contact-info">48. Direct Contact Info</h5>
+<ul>
+<li><strong>Feature:</strong> Visible contact information</li>
+<li><strong>User Story:</strong> As a Visitor, I want to clearly see direct contact details (Email, Telegram, Phone) on the site, so that I can reach out for a trial manually.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display contact section with:<ul>
+<li>Email address (clickable mailto link)</li>
+<li>Telegram username/link</li>
+<li>Phone number (clickable tel link)</li>
+</ul>
+</li>
+<li>Place in header, footer, and dedicated contact page</li>
+<li>Include business hours if applicable</li>
+<li>Optional: embedded chat widget</li>
+<li><strong>Implementation Notes:</strong> Multiple contact options for user preference</li>
+</ul>
+<h4 id="testimonials">Testimonials</h4>
+<p><strong>Section:</strong> Support &gt; Testimonials</p>
+<h5 id="49-review-list">49. Review List</h5>
+<ul>
+<li><strong>Feature:</strong> Student success stories and social proof</li>
+<li><strong>User Story:</strong> As a Visitor, I want to view a list of student success stories, so that I feel confident in the platform.</li>
+<li><strong>Acceptance Criteria:</strong></li>
+<li>Display testimonials in carousel, grid, or list format</li>
+<li>Show: student name, photo, course taken, quote/review, rating</li>
+<li>Include success metrics (e.g., "Improved from 40% to 90%")</li>
+<li>Testimonial date and verification badge (if authentic)</li>
+<li>Filter by course or star rating</li>
+<li>Optional: video testimonials</li>
+<li>Pagination or scroll loading</li>
+<li><strong>Implementation Notes:</strong> Build confidence and credibility; social proof</li>
+</ul>
+<hr />
+<h2 id="cross-functional-features">CROSS-FUNCTIONAL FEATURES</h2>
+<h3 id="notifications">Notifications</h3>
+<ul>
+<li>Real-time notifications for all user roles (in-app and optional email)</li>
+<li>Notification preferences and opt-out options</li>
+<li>Notification history and archive</li>
+</ul>
+<h3 id="messaging">Messaging</h3>
+<ul>
+<li>Direct messaging between students and teachers</li>
+<li>Discussion forums or class chat (optional)</li>
+<li>Notification bells for new messages</li>
+</ul>
+<h3 id="file-management">File Management</h3>
+<ul>
+<li>Upload, download, and preview capabilities across platform</li>
+<li>Supported formats: PDF, images, videos, documents</li>
+<li>File versioning and storage limits</li>
+</ul>
+<h3 id="search-filtering">Search &amp; Filtering</h3>
+<ul>
+<li>Global search across courses, materials, and users</li>
+<li>Advanced filtering options throughout platform</li>
+<li>Search history and saved filters</li>
+</ul>
+<h3 id="reporting-analytics">Reporting &amp; Analytics</h3>
+<ul>
+<li>User activity logs</li>
+<li>Course analytics and performance metrics</li>
+<li>Customizable reports</li>
+<li>Data export capabilities</li>
+</ul>
+<h3 id="mobile-responsiveness">Mobile Responsiveness</h3>
+<ul>
+<li>All features accessible on mobile/tablet</li>
+<li>Responsive design for iOS and Android devices</li>
+<li>Mobile-optimized navigation</li>
+</ul>
+<hr />
+<h2 id="implementation-priorities">IMPLEMENTATION PRIORITIES</h2>
+<h3 id="phase-1-core-features-mvp">Phase 1: Core Features (MVP)</h3>
+<ul>
+<li>Student Dashboard &amp; Class Join</li>
+<li>Teacher Class Management &amp; Grading</li>
+<li>Admin User &amp; Course Management</li>
+<li>Public Course Browsing &amp; Registration</li>
+<li>Telegram Authentication</li>
+</ul>
+<h3 id="phase-2-engagement">Phase 2: Engagement</h3>
+<ul>
+<li>Notifications &amp; Messaging</li>
+<li>Student Progress Tracking</li>
+<li>Project Submissions &amp; Feedback</li>
+<li>Teacher Attendance &amp; Analytics</li>
+</ul>
+<h3 id="phase-3-advanced">Phase 3: Advanced</h3>
+<ul>
+<li>Payment Integration (if external)</li>
+<li>Advanced Reporting &amp; Analytics</li>
+<li>Content Management</li>
+<li>Performance Assessments</li>
+</ul>
+<hr />
+<h2 id="technical-notes">TECHNICAL NOTES</h2>
+<h3 id="authentication-authorization">Authentication &amp; Authorization</h3>
+<ul>
+<li>Role-based access control (RBAC): Student, Teacher, Admin, Public</li>
+<li>Telegram OAuth integration for students</li>
+<li>Email/password authentication for teachers and admins</li>
+<li>Session management and security</li>
+</ul>
+<h3 id="data-models">Data Models</h3>
+<ul>
+<li>Users (Students, Teachers, Admins)</li>
+<li>Courses and Modules</li>
+<li>Classes/Sessions</li>
+<li>Assignments/Projects</li>
+<li>Submissions and Grades</li>
+<li>Attendance Records</li>
+<li>Notifications and Messages</li>
+</ul>
+<h3 id="integration-requirements">Integration Requirements</h3>
+<ul>
+<li>Google Meet API for class links</li>
+<li>Telegram Bot API for notifications and authentication</li>
+<li>Optional: Payment gateway (external)</li>
+<li>Email service for notifications</li>
+<li>File storage (cloud or local)</li>
+</ul>
+<h3 id="performance-considerations">Performance Considerations</h3>
+<ul>
+<li>Real-time notifications with minimal latency</li>
+<li>Efficient search and filtering</li>
+<li>Scalability for growing user base</li>
+<li>Caching for frequently accessed data</li>
+</ul>
+<hr />
+<h2 id="appendix-feature-summary-by-role">APPENDIX: FEATURE SUMMARY BY ROLE</h2>
+<h3 id="student-features-11-features">Student Features (11 features)</h3>
+<ol>
+<li>View Profile &amp; Stats</li>
+<li>Classes Leaderboard</li>
+<li>Current Lessons</li>
+<li>Notification Feed</li>
+<li>Class List with Payment Badge</li>
+<li>Join Class &amp; Upload Activity</li>
+<li>Auto-Attendance</li>
+<li>Project List &amp; Submit</li>
+<li>View Feedback</li>
+<li>Assessment &amp; Progress</li>
+<li>Future Evaluation</li>
+</ol>
+<h3 id="teacher-features-11-features">Teacher Features (11 features)</h3>
+<ol>
+<li>View Profile &amp; Stats</li>
+<li>Stats &amp; Announcements</li>
+<li>Create/Edit Course</li>
+<li>Submit Course for Approval</li>
+<li>Set Class Link</li>
+<li>Update Session Video URL</li>
+<li>Upload Material</li>
+<li>Student Directory</li>
+<li>Message Student</li>
+<li>Attendance Review</li>
+<li>Submission Inbox</li>
+<li>Monitoring Matrix</li>
+</ol>
+<h3 id="admin-features-16-features">Admin Features (16 features)</h3>
+<ol>
+<li>KPI Widgets</li>
+<li>User Management</li>
+<li>Trial Request Inbox</li>
+<li>Search Courses</li>
+<li>Approval Queue</li>
+<li>Create Class</li>
+<li>Assign Teacher</li>
+<li>Manage Enrollment</li>
+<li>Master Class List &amp; Filters</li>
+<li>Roster &amp; Payment Status</li>
+<li>View All Projects/Assignments</li>
+<li>Assess Performance</li>
+<li>Ad Manager</li>
+<li>Activity Tracker</li>
+<li>Download Reports</li>
+<li>General Settings</li>
+</ol>
+<h3 id="public-features-10-features">Public Features (10 features)</h3>
+<ol>
+<li>Promotions</li>
+<li>Login / SSO</li>
+<li>Filter &amp; Search Courses</li>
+<li>View Syllabus</li>
+<li>Watch Sample</li>
+<li>Book Class</li>
+<li>Request Trial</li>
+<li>Contact Form</li>
+<li>Direct Contact Info</li>
+<li>Review List</li>
+</ol>
+<p><strong>Total Features: 49</strong></p>
+<hr />
+<p><strong>Document Version:</strong> 1.0<br />
+<strong>Last Updated:</strong> 2025<br />
+<strong>Status:</strong> Production Ready  </p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
