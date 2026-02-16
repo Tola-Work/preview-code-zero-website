@@ -1,0 +1,37 @@
+site_name: CodeZero PRD
+site_url: https://github.com/Tola-Work/preview-code-zero-website
+repo_url: https://github.com/Tola-Work/preview-code-zero-website
+repo_name: CodeZero System
+
+theme:
+  name: material
+  palette:
+    # Light Mode (Default)
+    - scheme: default
+      primary: violet
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark Mode
+    - scheme: slate
+      primary: violet
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
