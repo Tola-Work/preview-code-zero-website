@@ -1,15 +1,22 @@
 # CodeZero System Features - Product Requirements Document
 
 ## Document Overview
+
 This PRD outlines all system features for the CodeZero platform, organized by user role (Student, Teacher, Admin, Public). Each feature is detailed with user stories, acceptance criteria, and implementation remarks.
+
+**Technical conventions (for implementation):**
+
+- **Rich text:** Long-form or descriptive text fields (e.g. course description, teacher bio/qualifications, project description, submission feedback, promotional text, learning objectives, syllabus) **use a rich text editor** so users can format content (bold, headings, lists, links). Store sanitized HTML in the existing `TEXT` columns. See `.cursor/rules/tech-stack.mdc` and `frontend.mdc` for the shared TipTap-based `RichTextEditor` and sanitization rules.
 
 ---
 
 ## Table of Contents
+
 1. [Student Portal](#student-portal)
 2. [Teacher Portal](#teacher-portal)
 3. [Admin Dashboard](#admin-dashboard)
 4. [Public Site](#public-site)
+5. [Cross-Functional Features](#cross-functional-features)
 
 ---
 
@@ -18,9 +25,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Dashboard
 
 #### Overview
+
 **Section:** Dashboard > Overview
 
 ##### 1. View Profile & Stats
+
 - **Feature:** Profile and progress summary display
 - **User Story:** As a Student, I want to view my profile and progress summary, so that I can see my status instantly.
 - **Acceptance Criteria:**
@@ -30,6 +39,7 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - **Implementation Notes:** Quick snapshot of student's current standing
 
 ##### 2. Classes Leaderboard
+
 - **Feature:** Class-specific leaderboard rankings
 - **User Story:** As a Student, I want to see the leaderboard rankings specifically for my class, so that I can compare my progress with my classmates.
 - **Acceptance Criteria:**
@@ -40,6 +50,7 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - **Implementation Notes:** Gamification element to encourage engagement
 
 ##### 3. Current Lessons
+
 - **Feature:** Live lesson access with join functionality
 - **User Story:** As a Student, I want to see a list of my lessons happening now with a "Join" link, so that I can enter the class immediately.
 - **Acceptance Criteria:**
@@ -50,6 +61,7 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - **Implementation Notes:** Critical for seamless class entry; should be the first action visible
 
 ##### 4. Notification Feed
+
 - **Feature:** Real-time notification center
 - **User Story:** As a Student, I want to see notifications for recent grades or teacher messages, so that I don't miss updates.
 - **Acceptance Criteria:**
@@ -65,9 +77,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### My Classes
 
 #### Class List
+
 **Section:** My Classes > Class List
 
 ##### 5. Class List with Payment Verification
+
 - **Feature:** Scheduled classes with payment status badge
 - **User Story:** As a Student, I want to see a list of my scheduled classes with time and date. I want to see a "Payment Verified" badge on my class card, so that I know my booking is confirmed and safe.
 - **Acceptance Criteria:**
@@ -80,9 +94,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - **Implementation Notes:** Trust and transparency; payment verification is crucial for students
 
 #### Schedule
+
 **Section:** My Classes > Schedule
 
 ##### 6. Join Class & Upload Activity
+
 - **Feature:** Class participation and post-class activity submission
 - **User Story:** As a Student, I want to join valid lessons and upload my activity/video after class, so that I can complete the session.
 - **Acceptance Criteria:**
@@ -92,13 +108,14 @@ This PRD outlines all system features for the CodeZero platform, organized by us
   - Allow multiple file types (PDF, document, video, image)
   - Show submission confirmation and receipt
   - Display upload deadline if applicable
-- **Implementation Notes:** 
+- **Implementation Notes:**
   - After class completion, students upload activity/project during learning session
   - Students upload/submit via link provided
   - Teacher will upload video after class finishes (recorded by teacher)
   - Track submission timestamps for grading
 
 ##### 7. Auto-Attendance
+
 - **Feature:** Automatic attendance marking upon class join
 - **User Story:** As a Student, I want my status to automatically change to "Present" the moment I click the "Join Class" button, so that I get credit for attending without needing to manually sign in.
 - **Acceptance Criteria:**
@@ -114,9 +131,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Projects
 
 #### My Projects
+
 **Section:** Projects > My Projects
 
 ##### 8. Project List & Submit
+
 - **Feature:** View and submit projects/assignments
 - **User Story:** As a Student, I want to view new projects from the teacher and submit my work via link, so that I can complete the assignment.
 - **Acceptance Criteria:**
@@ -126,12 +145,13 @@ This PRD outlines all system features for the CodeZero platform, organized by us
   - Provide submission form or file upload interface
   - Display project status (Not Started, In Progress, Submitted, Graded)
   - Allow resubmission before deadline if allowed
-- **Implementation Notes:** 
-  - Teacher creates new projects/assignments
+- **Implementation Notes:**
+  - Teacher creates new projects/assignments in Classes > [class] > Assignments (see Teacher Classes > Assignments)
   - Students view projects and submit work via provided link
-  - Maintain project history
+  - Maintain project history; teacher grades in Submission Inbox (#22)
 
 ##### 9. View Feedback
+
 - **Feature:** Grade and feedback review
 - **User Story:** As a Student, I want to view the teacher's grade and feedback on my past submissions, so that I can improve.
 - **Acceptance Criteria:**
@@ -148,9 +168,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Progress
 
 #### Reports
+
 **Section:** Progress > Reports
 
 ##### 10. Assessment & Progress Tracking
+
 - **Feature:** Course progress and module assessments
 - **User Story:** As a Student, I want to view my course progress and take module assessments, so that I can track my learning.
 - **Acceptance Criteria:**
@@ -160,11 +182,12 @@ This PRD outlines all system features for the CodeZero platform, organized by us
   - Provide access to take module/monthly assessments
   - Show assessment scores and results
   - Display learning timeline or milestone markers
-- **Implementation Notes:** 
+- **Implementation Notes:**
   - Assessment conducted for 1 module or 1 month on student project and in-class activities
   - Comprehensive tracking of student achievement
 
 ##### 11. Future Evaluation
+
 - **Feature:** Course recommendations and evaluation guidance
 - **User Story:** As a Student, I want to view evaluations for future class recommendations, so that I know what to study next.
 - **Acceptance Criteria:**
@@ -182,9 +205,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Dashboard
 
 #### Overview
+
 **Section:** Dashboard > Overview
 
 ##### 12. View Profile & Stats
+
 - **Feature:** Teacher profile creation and management
 - **User Story:** As a Teacher, I want to upload my photo and write a short bio, so that prospective students and parents can view my qualifications on the public Course Details page.
 - **Acceptance Criteria:**
@@ -196,6 +221,7 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - **Implementation Notes:** Public-facing profile enhances credibility and student enrollment
 
 ##### 13. Stats & Announcements
+
 - **Feature:** Dashboard widget with teaching workload overview
 - **User Story:** As a Teacher, I want to view my total courses, total students, assignment statuses, upcoming classes, and recent announcements on one screen, so that I can manage my teaching workload effectively.
 - **Acceptance Criteria:**
@@ -212,9 +238,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Courses
 
 #### My Courses
+
 **Section:** Courses > My Courses
 
 ##### 14. Create/Edit Course
+
 - **Feature:** Course content creation and management
 - **User Story:** As a Teacher, I want to create a new course or edit details, so that I can build content.
 - **Acceptance Criteria:**
@@ -227,6 +255,7 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - **Implementation Notes:** Core feature for teacher content creation
 
 ##### 15. Submit for Approval
+
 - **Feature:** Course submission workflow for admin approval
 - **User Story:** As a Teacher, I want a button to submit my finalized course to Admin, so that it can be approved.
 - **Acceptance Criteria:**
@@ -235,7 +264,7 @@ This PRD outlines all system features for the CodeZero platform, organized by us
   - Record submission timestamp and version
   - Provide feedback notification when course is approved/rejected
   - Allow resubmission after edits
-- **Implementation Notes:** 
+- **Implementation Notes:**
   - Upload course content, activities, and recorded videos
   - Quality control mechanism for platform consistency
 
@@ -244,9 +273,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Classes
 
 #### Schedule
+
 **Section:** Classes > Schedule
 
 ##### 16. Set Class Link
+
 - **Feature:** Online meeting link and schedule management
 - **User Story:** As a Teacher, I want to add/update the online meeting link and time for a specific class slot, so that students can join.
 - **Acceptance Criteria:**
@@ -255,24 +286,34 @@ This PRD outlines all system features for the CodeZero platform, organized by us
   - Save and publish link to students
   - Edit link before class starts
   - Display link in teacher view and student view
+  - Once a meeting link is set, the teacher sees a **"Join meeting"** button that opens the link in a new tab, in both the schedule page (per session row) and the dashboard **"Upcoming classes"** widget — mirrors the student Join experience for parity
+  - In **"Upcoming classes"**: when session is **IN_PROGRESS**, show **"Join meeting"** (like student); when **SCHEDULED**, show **"Start class"** button that links to the schedule page so the teacher can update the session status and enable students to join
 - **Implementation Notes:** Flexible for different meeting platforms
 
 ##### 17. Update Session Video URL
+
 - **Feature:** Post-class video recording management
 - **User Story:** As a Teacher, I want to update the video url link after the session via google meet completed for students that haven't joined can view the video later.
 - **Acceptance Criteria:**
   - Provide field to add/update video link after class
-  - Link is accessible to students who missed the live session
+  - Link is accessible to students who missed the live session — students see a **"Watch recording"** button on completed sessions when teacher has set a video URL
   - Display video availability status
   - Allow video to be recorded during class (via Google Meet integration)
   - Show video upload/link deadline
   - Notify students of video availability
+- **Additional behaviour (session management):**
+  1. **Sessions from schedule:** Sessions are created from the class schedule. For now, creation is triggered by the teacher (e.g. when opening the schedule page or via a "Generate sessions" action), so the teacher controls when sessions appear.
+  2. **Create and manage in advance:** Teachers can create sessions in advance and set the meeting (student) link in advance; video URLs are added after class. This keeps sessions manageable and allows students to see the join link before class.
+  3. **Editable session date/time:** When creating a session, default start date, end date, start time, and end time are inherited from the class schedule, but the teacher can edit any of these per session.
+  4. **Session status control:** Teacher can set an upcoming or current session to **IN_PROGRESS** (e.g. "Start class") or back to **SCHEDULED** (e.g. "Revert to scheduled"), so the live session can be enabled or disabled without changing the schedule.
 - **Implementation Notes:** Important for asynchronous learning; students can catch up on missed classes
 
 #### Resources
+
 **Section:** Classes > Resources
 
 ##### 18. Upload Material
+
 - **Feature:** Learning resource management and distribution
 - **User Story:** As a Teacher, I want to upload slides, homework, and videos to a specific class instance, so that students can access them.
 - **Acceptance Criteria:**
@@ -280,17 +321,35 @@ This PRD outlines all system features for the CodeZero platform, organized by us
   - Upload homework assignments and instructions
   - Upload/link videos (course recordings, tutorials)
   - Organize materials by module or date
-  - Set visibility/release date for materials
+  - Set visibility/release date for materials — students see a **Materials** section on the class detail page with released resources (respecting release dates)
   - Download management and version control
   - File preview/preview capability
-- **Implementation Notes:** 
+- **Implementation Notes:**
   - Upload course materials, activities, and recorded videos
   - Multiple file type support for diverse learning resources
 
+#### Assignments
+
+**Section:** Classes > Assignments (projects for student submission and grading)
+
+- **Feature:** Create and manage assignments (projects) per class
+- **User Story:** As a Teacher, I want to create assignments for a class and optionally set a due date and rubric, so that students see them in their Projects menu and can submit work for grading.
+- **Acceptance Criteria:**
+  - From class detail, access an Assignments list for that class
+  - Create assignment: title, description (optional), due date (optional), rubric (optional), allow resubmission (optional)
+  - List assignments for the class with due date and submission counts
+  - Edit or archive assignments (archived assignments no longer appear for new submission; students keep read-only view)
+  - Assignments appear in the student Projects menu for enrolled students; students submit via link (see PRD #8)
+- **Implementation Notes:**
+  - Separate from Class materials (#18): materials = upload files for download; assignments = tasks students submit and teacher grades (#22)
+  - Teacher creates assignments per class; grading is done in Submission Inbox (#22)
+
 #### Students
+
 **Section:** Classes > Students
 
 ##### 19. Student Directory
+
 - **Feature:** Class roster management and student filtering
 - **User Story:** As a Teacher, I want to filter students by class and view their profiles, so that I can know who is in my class.
 - **Acceptance Criteria:**
@@ -302,6 +361,7 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - **Implementation Notes:** Class management and student recognition
 
 ##### 20. Message Student
+
 - **Feature:** Private direct messaging with students
 - **User Story:** As a Teacher, I want to click a "Message" button on a student's profile, so that I can communicate privately.
 - **Acceptance Criteria:**
@@ -310,13 +370,14 @@ This PRD outlines all system features for the CodeZero platform, organized by us
   - Show message history with selected student
   - Send and receive messages
   - Notification for new messages
-  - Optional: File/resource sharing in messages
 - **Implementation Notes:** Improve communication; personal touch for student support
 
 #### Attendance
+
 **Section:** Classes > Attendance
 
 ##### 21. Attendance Review
+
 - **Feature:** Attendance verification and manual correction
 - **User Story:** As a Teacher, I want to verify the automated attendance records (marked when students joined) and manually correct any errors, so that the class records are accurate.
 - **Acceptance Criteria:**
@@ -333,9 +394,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Grading
 
 #### Assessment
+
 **Section:** Grading > Assessment
 
 ##### 22. Submission Inbox
+
 - **Feature:** Student submission review and grading workspace
 - **User Story:** As a Teacher, I want to view a list of student project submissions, so that I can begin grading.
 - **Acceptance Criteria:**
@@ -344,13 +407,14 @@ This PRD outlines all system features for the CodeZero platform, organized by us
   - Filter by assignment, student, or submission date
   - Click to open submission for detailed review
   - Mark submission as graded/reviewed
-  - Provide feedback form for each submission
-- **Implementation Notes:** 
-  - View student project submissions
-  - Provide feedback to each student
-  - Streamline grading workflow
+  - Provide feedback form for each submission (grade 0–100, written feedback)
+- **Implementation Notes:**
+  - Assignments are created per class (Classes > Assignments); submissions appear here for grading
+  - View student project submissions; provide feedback to each student; streamline grading workflow
+  - Students see grade and feedback on their project detail page (#8, #9)
 
 ##### 23. Monitoring Matrix
+
 - **Feature:** Class-wide performance overview
 - **User Story:** As a Teacher, I want to view a matrix of the whole class's progress, so that I can spot struggling students.
 - **Acceptance Criteria:**
@@ -370,9 +434,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Dashboard
 
 #### Overview
+
 **Section:** Dashboard > Overview
 
 ##### 24. KPI Widgets
+
 - **Feature:** System health monitoring dashboard
 - **User Story:** As an Admin, I want to view Total Users, Total Courses, and Active Users, so that I can monitor system health.
 - **Acceptance Criteria:**
@@ -390,9 +456,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Users
 
 #### User List
+
 **Section:** Users > User List
 
 ##### 25. User Management
+
 - **Feature:** Full user CRUD operations
 - **User Story:** As an Admin, I want to view all users and use "Create/Edit/Delete" actions, so that I manage access.
 - **Acceptance Criteria:**
@@ -400,16 +468,20 @@ This PRD outlines all system features for the CodeZero platform, organized by us
   - Show: username, email, role, registration date, status (active/inactive)
   - Create new user form (name, email, role, password)
   - Edit user information and role
+  - Update user profile
   - Deactivate or delete user accounts
   - Search/filter by name, email, role
   - Bulk actions (bulk activate, deactivate, delete)
   - View user activity/login history
+  - View user profile
 - **Implementation Notes:** Central user management; enable/disable access as needed
 
 #### Leads & Trials
+
 **Section:** Users > Leads & Trials
 
 ##### 26. Trial Request Inbox
+
 - **Feature:** Centralized trial request management
 - **User Story:** As an Admin, I want to view a centralized list of all "Free Trial" requests coming from Telegram, so that I can follow up and convert them into enrolled students without searching through chat logs.
 - **Acceptance Criteria:**
@@ -420,7 +492,7 @@ This PRD outlines all system features for the CodeZero platform, organized by us
   - Track conversion status
   - Set reminders for follow-up
   - Export lead list for CRM integration
-- **Implementation Notes:** 
+- **Implementation Notes:**
   - Requests come from Telegram registration
   - Eliminates need to search through chat logs
   - Improves lead conversion tracking
@@ -430,9 +502,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Courses
 
 #### Course Registry
+
 **Section:** Courses > Course Registry
 
 ##### 27. Search Courses
+
 - **Feature:** Course discovery and search
 - **User Story:** As an Admin, I want to search courses by Teacher Name, so that I can find specific content.
 - **Acceptance Criteria:**
@@ -444,9 +518,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - **Implementation Notes:** Quick course lookup; monitor course inventory
 
 #### Approvals
+
 **Section:** Courses > Approvals
 
 ##### 28. Approval Queue
+
 - **Feature:** Teacher course approval workflow
 - **User Story:** As an Admin, I want to view courses submitted by teachers and click "Approve" or "Edit," so that quality is maintained.
 - **Acceptance Criteria:**
@@ -464,9 +540,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Classes
 
 #### Class Management
+
 **Section:** Classes > Class Management
 
-##### 29. Create Class
+##### 29. Create/Edit Class
+
 - **Feature:** Class instance creation and setup
 - **User Story:** As an Admin, I want to create a class instance (e.g., "Junior Code A") and assign a category, so that the schedule is built.
 - **Acceptance Criteria:**
@@ -476,9 +554,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
   - Assign time slots (day, time, duration)
   - Publish class for enrollment
   - Save as draft before publishing
+  - Edit the class
 - **Implementation Notes:** Build the class catalog
 
 ##### 30. Assign Teacher
+
 - **Feature:** Teacher-to-class assignment
 - **User Story:** As an Admin, I want to assign a specific teacher to a class instance, so that the class has an instructor.
 - **Acceptance Criteria:**
@@ -491,10 +571,12 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - **Implementation Notes:** Link instructors to classes
 
 ##### 31. Manage Enrollment
+
 - **Feature:** Student enrollment and status management
 - **User Story:** As an Admin, I want to add students to a class and update their status, so that records are accurate.
 - **Acceptance Criteria:**
   - Add individual students to class by name/email search
+  - Download Bulk import template
   - Bulk import students (CSV file)
   - Update enrollment status: Active, Waitlist, Inactive, Dropped
   - Update payment status: Paid, Pending, Trial
@@ -504,9 +586,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - **Implementation Notes:** Student roster management; payment tracking
 
 #### Class Directory
+
 **Section:** Classes > Class Directory
 
 ##### 32. Master Class List & Filters
+
 - **Feature:** Comprehensive class inventory with filtering
 - **User Story:** As an Admin, I want to view a master list of all classes and filter by Teacher, Day, or Status, so that I can quickly locate specific sessions without searching one by one.
 - **Acceptance Criteria:**
@@ -521,9 +605,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - **Implementation Notes:** Central view of entire class schedule; operational management
 
 #### Class Detail
+
 **Section:** Classes > Class Detail
 
 ##### 33. Roster & Payment Status Management
+
 - **Feature:** Detailed class roster with payment verification
 - **User Story:** As an Admin, I want to click on a class to see the full student roster with their Payment Status (Paid/Pending/Trial) and be able to manually toggle it, so that I can verify who is allowed to be in the room.
 - **Acceptance Criteria:**
@@ -542,9 +628,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Project/Assignment
 
 #### Global Project View
+
 **Section:** Project/Assignment > Global Project View
 
 ##### 34. View All Projects & Assignments
+
 - **Feature:** Platform-wide project monitoring
 - **User Story:** As an Admin, I want to view every project and assignment created by all teachers, so that I can monitor the quality and consistency of the curriculum across the platform.
 - **Acceptance Criteria:**
@@ -563,9 +651,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Performance
 
 #### Quality Assessment
+
 **Section:** Performance > Quality Assessment
 
 ##### 35. Assess Teachers' and Students' Performance
+
 - **Feature:** Comprehensive performance analytics
 - **User Story:** As an Admin, I want to review the performance metrics of both teachers and students, so that I can identify high-performers and those needing additional support.
 - **Acceptance Criteria:**
@@ -584,9 +674,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Content
 
 #### Public Content
+
 **Section:** Content > Public Content
 
 ##### 36. Ad Manager
+
 - **Feature:** Marketing content and promotions management
 - **User Story:** As an Admin, I want to post content for advertisements and new class promotions, so that the public site is updated.
 - **Acceptance Criteria:**
@@ -605,9 +697,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Reports
 
 #### Analytics
+
 **Section:** Reports > Analytics
 
 ##### 37. Activity Tracker
+
 - **Feature:** System-wide activity auditing and logging
 - **User Story:** As an Admin, I want to view logs of teacher and student activities, so that I can audit usage.
 - **Acceptance Criteria:**
@@ -621,6 +715,7 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - **Implementation Notes:** Audit trail for compliance and platform monitoring
 
 ##### 38. Download Reports
+
 - **Feature:** Report generation and export
 - **User Story:** As an Admin, I want to click "Generate Report" for student progress or teacher performance, so that I have offline records.
 - **Acceptance Criteria:**
@@ -638,9 +733,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Settings
 
 #### System Config
+
 **Section:** Settings > System Config
 
 ##### 39. General Settings
+
 - **Feature:** Platform configuration and system parameters
 - **User Story:** As an Admin, I want to set the System Name, Maintenance Mode, and Default Locale, so that the platform is configured correctly.
 - **Acceptance Criteria:**
@@ -662,9 +759,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Home
 
 #### Landing Page
+
 **Section:** Home > Landing Page
 
 ##### 40. Promotions
+
 - **Feature:** Class promotions and featured content
 - **User Story:** As a Visitor, I want to see upcoming class promotions, so that I am encouraged to explore.
 - **Acceptance Criteria:**
@@ -676,9 +775,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - **Implementation Notes:** Increase discoverability and enrollment
 
 #### Header/Navigation
+
 **Section:** Home > Header/Nav
 
 ##### 41. Login / SSO
+
 - **Feature:** User authentication and role-based access
 - **User Story:** As a Visitor, I want to log in using Telegram (if I am a Student) or Email/Password (if I am a Teacher/Admin), so that I can access the correct dashboard.
 - **Acceptance Criteria:**
@@ -691,7 +792,7 @@ This PRD outlines all system features for the CodeZero platform, organized by us
   - Dashboard redirect based on user role
   - Session management (login/logout)
   - Remember me option
-- **Implementation Notes:** 
+- **Implementation Notes:**
   - Students: Register via Telegram (can link Email later)
   - Admins/Teachers: Email & Password only
   - Telegram login acts as phone number verification (cost savings - no SMS OTP needed)
@@ -702,9 +803,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Courses
 
 #### Catalog
+
 **Section:** Courses > Catalog
 
 ##### 42. Filter & Search
+
 - **Feature:** Course discovery with filtering options
 - **User Story:** As a Visitor, I want to filter courses by category, age, or skill level, so that I find relevant classes.
 - **Acceptance Criteria:**
@@ -718,9 +821,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - **Implementation Notes:** Help visitors find relevant courses quickly
 
 #### Course Details
+
 **Section:** Courses > Course Details
 
 ##### 43. View Syllabus
+
 - **Feature:** Course curriculum and instructor information
 - **User Story:** As a Visitor, I want to read the curriculum and teacher profile, so that I understand what is being taught.
 - **Acceptance Criteria:**
@@ -734,6 +839,7 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - **Implementation Notes:** Build trust through transparency
 
 ##### 44. Watch Sample
+
 - **Feature:** Sample lesson video preview
 - **User Story:** As a Visitor, I want to click "Play" on a sample video/trial lesson, so that I can see the teaching style.
 - **Acceptance Criteria:**
@@ -750,9 +856,11 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Join
 
 #### Registration
+
 **Section:** Join > Registration
 
 ##### 45. Book Class
+
 - **Feature:** Student registration and class booking
 - **User Story:** As a Visitor, I want to register/login with Telegram to verify my identity before booking a class, so that I don't need to pay for SMS OTP.
 - **Acceptance Criteria:**
@@ -763,23 +871,24 @@ This PRD outlines all system features for the CodeZero platform, organized by us
   - Send booking confirmation email
   - Add class to student calendar
   - Receive class details and join link via email/notification
-- **Implementation Notes:** 
+- **Implementation Notes:**
   - Telegram login acts as phone verification (cost saving - no SMS OTP)
   - Payment done externally from admin dashboard directly with students
   - Streamlined registration process
 
 ##### 46. Request Trial
+
 - **Feature:** Free trial request submission
 - **User Story:** As a Visitor, I want to request a trial by clicking "Start with Telegram", so that my request is instantly verified and sent to the Admin.
 - **Acceptance Criteria:**
   - "Request Trial" button on course page
   - Trigger Telegram login for verification
-  - Collect additional info: name, age, interests (optional)
   - Send trial request to admin inbox instantly
   - Send confirmation to user: "Request Received"
   - Admin receives Telegram bot alert for new trial request
   - Track trial request status (Pending, Approved, Completed)
-- **Implementation Notes:** 
+  - Show request step tracking above each step
+- **Implementation Notes:**
   - Replaces SMS OTP verification
   - Telegram bot notifies admin of new trial requests instantly
   - Faster qualification process
@@ -789,22 +898,25 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ### Support
 
 #### Help
+
 **Section:** Support > Help
 
 ##### 47. Contact Form
+
 - **Feature:** Customer support inquiry form
 - **User Story:** As a Visitor, I want to use a contact form or chat, so that I can ask for support.
 - **Acceptance Criteria:**
   - Contact form with fields: name, email, subject, message
-  - Optional: file attachment (for screenshots, etc.)
   - Dropdown for inquiry type (billing, technical, other)
   - Form validation (required fields, email format)
   - Submission confirmation message
   - Support ticket creation and tracking number
   - Email copy of inquiry to visitor
+  - After user fill the contact form and submit save to table and then send the message to telegram.
 - **Implementation Notes:** Multiple support channels
 
 ##### 48. Direct Contact Info
+
 - **Feature:** Visible contact information
 - **User Story:** As a Visitor, I want to clearly see direct contact details (Email, Telegram, Phone) on the site, so that I can reach out for a trial manually.
 - **Acceptance Criteria:**
@@ -814,13 +926,14 @@ This PRD outlines all system features for the CodeZero platform, organized by us
     - Phone number (clickable tel link)
   - Place in header, footer, and dedicated contact page
   - Include business hours if applicable
-  - Optional: embedded chat widget
 - **Implementation Notes:** Multiple contact options for user preference
 
 #### Testimonials
+
 **Section:** Support > Testimonials
 
 ##### 49. Review List
+
 - **Feature:** Student success stories and social proof
 - **User Story:** As a Visitor, I want to view a list of student success stories, so that I feel confident in the platform.
 - **Acceptance Criteria:**
@@ -829,7 +942,6 @@ This PRD outlines all system features for the CodeZero platform, organized by us
   - Include success metrics (e.g., "Improved from 40% to 90%")
   - Testimonial date and verification badge (if authentic)
   - Filter by course or star rating
-  - Optional: video testimonials
   - Pagination or scroll loading
 - **Implementation Notes:** Build confidence and credibility; social proof
 
@@ -838,32 +950,53 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ## CROSS-FUNCTIONAL FEATURES
 
 ### Notifications
+
 - Real-time notifications for all user roles (in-app and optional email)
 - Notification preferences and opt-out options
 - Notification history and archive
 
 ### Messaging
+
 - Direct messaging between students and teachers
-- Discussion forums or class chat (optional)
 - Notification bells for new messages
 
 ### File Management
+
 - Upload, download, and preview capabilities across platform
 - Supported formats: PDF, images, videos, documents
 - File versioning and storage limits
 
 ### Search & Filtering
+
 - Global search across courses, materials, and users
 - Advanced filtering options throughout platform
 - Search history and saved filters
 
 ### Reporting & Analytics
+
 - User activity logs
 - Course analytics and performance metrics
 - Customizable reports
 - Data export capabilities
 
+### Web Analytics (Google Analytics 4)
+
+- **Feature:** Website analytics and conversion tracking via Google Analytics 4 (GA4) for acquisition, conversion, and engagement insights.
+- **User Story:** As a product or marketing owner, I want to understand how visitors find the site, which courses and promotions drive interest, and how trial and contact conversions perform, so that I can improve acquisition and engagement.
+- **Acceptance Criteria:**
+  - Page views tracked on every route (including client-side navigation) when GA Measurement ID is configured.
+  - Public and conversion events tracked: course detail views, sample video view/play, promotion clicks, trial request started/completed, contact form submitted, login (by method: Telegram vs credentials).
+  - Key engagement events tracked: student join class click, project submitted; teacher grade submitted.
+  - No PII (no user id, email, name, or phone) sent in any event parameters.
+  - Analytics script loads only when `NEXT_PUBLIC_GA_MEASUREMENT_ID` is set; otherwise no tracking.
+- **Implementation Notes:**
+  - **Setup:** One GA4 property; Measurement ID (e.g. `G-XXXXXXXXXX`) in env var `NEXT_PUBLIC_GA_MEASUREMENT_ID`. gtag script injected in root layout with `send_page_view: false`; SPA page_view sent from `AnalyticsProvider` on pathname/search change.
+  - **Events (custom):** `view_course` (course_slug, course_category, course_level), `view_sample_video` (video_source), `promotion_click` (promotion_id, promotion_type, destination), `trial_request_started` (source, course_slug), `trial_request_completed` (source, course_slug), `generate_lead` (lead_type: contact_form, inquiry_type), `login` (method: password | telegram), `join_class_click` (session_id), `project_submitted` (project_id), `grade_submitted` (submission_id). Mark `trial_request_completed` and `generate_lead` as conversions in GA4 if desired.
+  - **Components:** `app/layout.tsx` (script injection), `components/providers/AnalyticsProvider.tsx` (page_view), `CourseViewTracker`, `SampleVideoPlayer`, `PromotionCarousel`/`PromotionCard`, course detail trial CTA, `TrialCompletedTracker`, `ContactForm`, `LoginForm`, `SessionRow`, `ProjectSubmitForm`, `GradeSubmissionForm`.
+  - **Privacy:** No PII in events; detailed audit remains in Activity Tracker (#37) and reports. Add consent banner and gtag consent mode when required (e.g. EU).
+
 ### Mobile Responsiveness
+
 - All features accessible on mobile/tablet
 - Responsive design for iOS and Android devices
 - Mobile-optimized navigation
@@ -873,6 +1006,7 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ## IMPLEMENTATION PRIORITIES
 
 ### Phase 1: Core Features (MVP)
+
 - Student Dashboard & Class Join
 - Teacher Class Management & Grading
 - Admin User & Course Management
@@ -880,12 +1014,14 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - Telegram Authentication
 
 ### Phase 2: Engagement
+
 - Notifications & Messaging
 - Student Progress Tracking
 - Project Submissions & Feedback
 - Teacher Attendance & Analytics
 
 ### Phase 3: Advanced
+
 - Payment Integration (if external)
 - Advanced Reporting & Analytics
 - Content Management
@@ -896,12 +1032,14 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 ## TECHNICAL NOTES
 
 ### Authentication & Authorization
+
 - Role-based access control (RBAC): Student, Teacher, Admin, Public
 - Telegram OAuth integration for students
 - Email/password authentication for teachers and admins
 - Session management and security
 
 ### Data Models
+
 - Users (Students, Teachers, Admins)
 - Courses and Modules
 - Classes/Sessions
@@ -911,23 +1049,49 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 - Notifications and Messages
 
 ### Integration Requirements
+
 - Google Meet API for class links
 - Telegram Bot API for notifications and authentication
-- Optional: Payment gateway (external)
 - Email service for notifications
 - File storage (cloud or local)
 
 ### Performance Considerations
+
 - Real-time notifications with minimal latency
 - Efficient search and filtering
 - Scalability for growing user base
-- Caching for frequently accessed data
+- Caching for frequently accessed data (see **Redis Cache** below)
+
+### Redis Cache
+
+Redis (Upstash in Phase 1; VPS: Redis via `CACHE_PROVIDER=redis`) is used for short-TTL caching of read-heavy, aggregate data to reduce database load and improve response times. All cache keys and TTLs are defined below; invalidation is applied when source data changes.
+
+**Cache provider:** `lib/providers/cache/` — `ICacheProvider` (get, set, del, exists), `UpstashCacheProvider`, optional `RedisCacheProvider` for VPS. Export `cacheService`; swap via `CACHE_PROVIDER=upstash|redis`.
+
+| Priority | Data                          | Service / location                                                     | Cache key                   | TTL   | Invalidation                                                                     |
+| -------- | ----------------------------- | ---------------------------------------------------------------------- | --------------------------- | ----- | -------------------------------------------------------------------------------- |
+| 1        | Admin dashboard KPIs (#24)    | `getAdminDashboardStats()` — `services/admin-dashboard.service.ts`     | `kpi:admin:stats`           | 60s   | TTL only                                                                         |
+| 2        | Class leaderboard (#2)        | `getClassLeaderboard()` — `services/leaderboard.service.ts`            | `leaderboard:{classId}`     | 30s   | On grade posted or attendance updated for that class; Inngest `class-ended` step |
+| 3        | Public settings (#39)         | `getPublicSettings()` — `services/settings.service.ts`                 | `settings:public`           | 5 min | When admin updates general settings                                              |
+| 4        | Active promotions (#40, #36)  | `getActivePromotions()` — `services/promotion.service.ts`              | `promotions:active`         | 5 min | On create/update/delete promotion                                                |
+| 5        | Teacher dashboard stats (#13) | `getTeacherDashboardStats()` — `services/teacher-dashboard.service.ts` | `kpi:teacher:{teacherId}`   | 60s   | TTL only                                                                         |
+| 6        | Student profile stats (#1)    | `getStudentProfileWithStats()` — `services/user.service.ts`            | `profile:stats:{studentId}` | 60s   | On enrollment, submission, or attendance change for that student                 |
+
+**Rules:**
+
+- Never store PII in cache; store only aggregate counts, IDs, and non-sensitive metadata.
+- Serialize complex values as JSON for `set`; parse on `get`.
+- Invalidation: call `cacheService.del(key)` in the same code path that mutates the underlying data (e.g. after `gradeSubmission` → del `leaderboard:{classId}`; after `updateGeneralSettings` → del `settings:public`).
+- Inngest `class-ended` must include a step that deletes `leaderboard:{classId}` for the affected class.
+
+**Optional (later):** Catalog search result cache (`searchCatalog`) for popular filter combinations; rate limiting (login, contact form, upload) using the same Redis instance.
 
 ---
 
 ## APPENDIX: FEATURE SUMMARY BY ROLE
 
 ### Student Features (11 features)
+
 1. View Profile & Stats
 2. Classes Leaderboard
 3. Current Lessons
@@ -941,56 +1105,86 @@ This PRD outlines all system features for the CodeZero platform, organized by us
 11. Future Evaluation
 
 ### Teacher Features (11 features)
-12. View Profile & Stats
-13. Stats & Announcements
-14. Create/Edit Course
-15. Submit Course for Approval
-16. Set Class Link
-17. Update Session Video URL
-18. Upload Material
-19. Student Directory
-20. Message Student
-21. Attendance Review
-22. Submission Inbox
-23. Monitoring Matrix
+
+1. View Profile & Stats
+2. Stats & Announcements
+3. Create/Edit Course
+4. Submit Course for Approval
+5. Set Class Link
+6. Update Session Video URL
+7. Upload Material
+8. Student Directory
+9. Message Student
+10. Attendance Review
+11. Submission Inbox
+12. Monitoring Matrix
 
 ### Admin Features (16 features)
-24. KPI Widgets
-25. User Management
-26. Trial Request Inbox
-27. Search Courses
-28. Approval Queue
-29. Create Class
-30. Assign Teacher
-31. Manage Enrollment
-32. Master Class List & Filters
-33. Roster & Payment Status
-34. View All Projects/Assignments
-35. Assess Performance
-36. Ad Manager
-37. Activity Tracker
-38. Download Reports
-39. General Settings
+
+1. KPI Widgets
+2. User Management
+3. Trial Request Inbox
+4. Search Courses
+5. Approval Queue
+6. Create Class
+7. Assign Teacher
+8. Manage Enrollment
+9. Master Class List & Filters
+10. Roster & Payment Status
+11. View All Projects/Assignments
+12. Assess Performance
+13. Ad Manager
+14. Activity Tracker
+15. Download Reports
+16. General Settings
 
 ### Public Features (10 features)
-40. Promotions
-41. Login / SSO
-42. Filter & Search Courses
-43. View Syllabus
-44. Watch Sample
-45. Book Class
-46. Request Trial
-47. Contact Form
-48. Direct Contact Info
-49. Review List
+
+1. Promotions
+2. Login / SSO
+3. Filter & Search Courses
+4. View Syllabus
+5. Watch Sample
+6. Book Class
+7. Request Trial
+8. Contact Form
+9. Direct Contact Info
+10. Review List
 
 **Total Features: 49**
 
 ---
 
-**Document Version:** 1.0  
-**Last Updated:** 2025  
-**Status:** Production Ready  
+## Inngest Implementation (Queue & Async Jobs)
+
+This section tracks Inngest-based features for async processing, retries, and improved UX. Queue provider: Inngest (Phase 1); VPS alternative: BullMQ.
+
+| Function          | Event              | PRD Feature            | Trigger Point                                         | Status  |
+| ----------------- | ------------------ | ---------------------- | ----------------------------------------------------- | ------- |
+| `generate-report` | `report/requested` | #38 Download Reports   | Admin requests report with delivery=email             | ✅ Done |
+| `grade-posted`    | `grade/posted`     | #9 View Feedback       | Teacher grades submission in grading action           | ✅ Done |
+| `course-approved` | `course/approved`  | #28 Approval Queue     | Admin approves course                                 | ✅ Done |
+| `class-ended`     | `class/ended`      | #3 Current Lessons     | Cron `update-session-status` marks sessions COMPLETED | ✅ Done |
+| `trial-requested` | `trial/requested`  | #26, #46 Trial Request | Student submits trial request (join flow)             | ✅ Done |
+| `send-message`    | `message/send`     | #20 Message Student    | Action enqueues → serverless saves to DB (fast UI)    | ✅ Done |
+
+### Planned (not yet implemented)
+
+| Function              | Event                         | PRD Feature        | Notes                                                          |
+| --------------------- | ----------------------------- | ------------------ | -------------------------------------------------------------- |
+| `scan-upload`         | `file/uploaded`               | #6 Upload Activity | VirusTotal scan; requires upload tracking + VIRUSTOTAL_API_KEY |
+| `attendance-exported` | `attendance/export-requested` | #21 Attendance     | CSV/PDF export; needs export trigger in admin UI               |
+
+### Email templates (Inngest-related)
+
+- `ReportEmail.tsx` — Report ready download link (#38)
+- `CourseApprovedEmail.tsx` — Course approved notification to teacher (#28)
+- `TrialConfirmationEmail.tsx` — Trial request received (#46)
 
 ---
 
+**Document Version:** 1.0
+**Last Updated:** 2025
+**Status:** Production Ready
+
+---
